@@ -17,5 +17,24 @@ namespace MVC.Controllers
             List<Category> ctrList = _db.Categories.ToList();
             return View(ctrList);
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Category ctr) 
+        {
+            if (ctr.Name == ctr.DisplayOrder.ToString())
+            {
+                ModelState.AddModelError("Name", "Name and Display order cannot be same.");
+            }
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Add(ctr);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }

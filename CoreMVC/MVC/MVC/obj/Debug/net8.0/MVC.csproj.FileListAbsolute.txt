@@ -134,3 +134,4 @@ D:\Practise\CoreMVC\MVC\MVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Secu
 D:\Practise\CoreMVC\MVC\MVC\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Practise\CoreMVC\MVC\MVC\obj\Debug\net8.0\MVC.csproj.AssemblyReference.cache
 D:\Practise\CoreMVC\MVC\MVC\obj\Debug\net8.0\MVC.csproj.CopyComplete
+D:\Practise\CoreMVC\MVC\MVC\obj\Debug\net8.0\MVC.sourcelink.json
