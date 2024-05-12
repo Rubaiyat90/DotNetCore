@@ -61,5 +61,31 @@ namespace MVC.Controllers
             }
             return View();
         }
+
+        public IActionResult Delete(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            Category? ctr = _db.Categories.Find(id);
+            if (ctr == null)
+            {
+                return NotFound();
+            }
+            return View(ctr);
+        }
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeletePost(int? id)
+        {
+            Category? ctr = _db.Categories.Find(id);
+            if (ctr == null)
+            {
+                return NotFound();
+            }
+            _db.Categories.Remove(ctr);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
