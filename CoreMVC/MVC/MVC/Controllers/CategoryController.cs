@@ -32,6 +32,7 @@ namespace MVC.Controllers
             {
                 _db.Categories.Add(ctr);
                 _db.SaveChanges();
+                TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -57,6 +58,7 @@ namespace MVC.Controllers
             {
                 _db.Categories.Update(ctr);
                 _db.SaveChanges();
+                TempData["success"] = "Category updated successfully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -85,6 +87,7 @@ namespace MVC.Controllers
             }
             _db.Categories.Remove(ctr);
             _db.SaveChanges();
+            TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
         }
     }
