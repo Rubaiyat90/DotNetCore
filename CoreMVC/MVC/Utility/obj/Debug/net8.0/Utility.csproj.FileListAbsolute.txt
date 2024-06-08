@@ -1,0 +1,12 @@
+D:\Practise\CoreMVC\MVC\Utility\bin\Debug\net8.0\Utility.deps.json
+D:\Practise\CoreMVC\MVC\Utility\bin\Debug\net8.0\Utility.dll
+D:\Practise\CoreMVC\MVC\Utility\bin\Debug\net8.0\Utility.pdb
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.AssemblyInfoInputs.cache
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.AssemblyInfo.cs
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.csproj.CoreCompileInputs.cache
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.sourcelink.json
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.dll
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\refint\Utility.dll
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.pdb
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\ref\Utility.dll
