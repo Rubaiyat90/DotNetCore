@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MVC.Data;
-using MVC.Models;
+﻿using DataAccess.Data;
+using Models;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace MVC.Controllers
 {
