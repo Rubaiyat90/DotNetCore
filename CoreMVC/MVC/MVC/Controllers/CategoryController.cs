@@ -1,21 +1,22 @@
 ﻿using DataAccess.Data;
 using Models;
 using Microsoft.AspNetCore.Mvc;
+using DataAccess.Repository.IRepository;
 
 
 namespace MVC.Controllers
 {
     public class CategoryController : Controller
     {
-        public readonly ApplicationDbContext _db;
+        public readonly ICategoryRepository _crepo;
 
-        public CategoryController(ApplicationDbContext db)
+        public CategoryController(ICategoryRepository db)
         {
-            _db = db;
+            _crepo = db;
         }
         public IActionResult Index()
         {
-            List<Category> ctrList = _db.Categories.ToList();
+            List<Category> ctrList = _crepo.GetAll().ToList();
             return View(ctrList);
         }
         public IActionResult Create()
@@ -31,8 +32,8 @@ namespace MVC.Controllers
             }
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(ctr);
-                _db.SaveChanges();
+                _crepo.Add(ctr);
+                _crepo.Save();
                 TempData["success"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
@@ -45,7 +46,7 @@ namespace MVC.Controllers
             {
                 return NotFound();
             }
-            Category? ctr = _db.Categories.Find(id);
+            Category? ctr = _crepo.Get(u => u.Id == id);
             if (ctr == null)
             {
                 return NotFound();
@@ -57,8 +58,8 @@ namespace MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(ctr);
-                _db.SaveChanges();
+                _crepo.Update(ctr);
+                _crepo.Save();
                 TempData["success"] = "Category updated successfully";
                 return RedirectToAction("Index");
             }
@@ -71,7 +72,7 @@ namespace MVC.Controllers
             {
                 return NotFound();
             }
-            Category? ctr = _db.Categories.Find(id);
+            Category? ctr = _crepo.Get(u => u.Id == id);
             if (ctr == null)
             {
                 return NotFound();
@@ -81,13 +82,13 @@ namespace MVC.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePost(int? id)
         {
-            Category? ctr = _db.Categories.Find(id);
+            Category? ctr = _crepo.Get(u => u.Id == id);
             if (ctr == null)
             {
                 return NotFound();
             }
-            _db.Categories.Remove(ctr);
-            _db.SaveChanges();
+            _crepo.Remove(ctr);
+            _crepo.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
         }
