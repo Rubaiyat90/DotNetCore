@@ -10,3 +10,4 @@ D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.dll
 D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\refint\Utility.dll
 D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.pdb
 D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\ref\Utility.dll
+D:\Practise\CoreMVC\MVC\Utility\obj\Debug\net8.0\Utility.csproj.AssemblyReference.cache
