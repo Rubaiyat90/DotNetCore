@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Models.ViewModel;
 
 
 namespace MVC.Areas.Admin.Controllers
@@ -17,34 +18,35 @@ namespace MVC.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
+
             List<Product> pdtList = _unitOfWork.Product.GetAll().ToList();
+            
             return View(pdtList);
         }
         public IActionResult Create()
         {
-            return View();
+            ProductVM productVM = new()
+            {
+                CategoryList = _unitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                }),
+                Product = new Product()
+            };
+            return View(productVM);
         }
         [HttpPost]
-        public IActionResult Create(ProductVM productVM)
+        public IActionResult Create(ProductVM obj)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Product.Add(productVM);
+                _unitOfWork.Product.Add(obj.Product);
                 _unitOfWork.Save();
                 TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
-            else
-            {
-                CategoryList = _unitOfWork.Category.GetAll().Select
-                (u => new SelectListItem
-                {
-                    Text = u.Name,
-                    Value = u.Id.ToString()
-                }
-                );
-                return View();
-            }
+            return View();
             
         }
 
