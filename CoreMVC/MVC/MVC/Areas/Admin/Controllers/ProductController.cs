@@ -21,7 +21,7 @@ namespace MVC.Areas.Admin.Controllers
         public IActionResult Index()
         {
 
-            List<Product> pdtList = _unitOfWork.Product.GetAll().ToList();
+            List<Product> pdtList = _unitOfWork.Product.GetAll(includeProperties:"Category").ToList();
             
             return View(pdtList);
         }
@@ -57,15 +57,33 @@ namespace MVC.Areas.Admin.Controllers
                     string filename = Guid.NewGuid().ToString()+ Path.GetExtension(file.FileName);
                     string productPath = Path.Combine(wwwRootPath, @"images\product");
 
+                    if(!string.IsNullOrEmpty(productVM.Product.ImageUrl))
+                    {
+                        var oldProductPath = Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+                        if(System.IO.File.Exists(oldProductPath))
+                        {
+                            System.IO.File.Delete(oldProductPath);
+                        }
+                    }
+
                     using (var fileStream = new FileStream(Path.Combine(productPath, filename), FileMode.Create))
                     {
                         file.CopyTo(fileStream);
                     }
                     productVM.Product.ImageUrl = @"\images\product\" + filename;
                 }
-                _unitOfWork.Product.Add(productVM.Product);
+                if(productVM.Product.Id==0)
+                {
+                    _unitOfWork.Product.Add(productVM.Product);
+                    TempData["success"] = "Product created successfully";
+
+                }
+                else
+                {
+                    _unitOfWork.Product.Update(productVM.Product);
+                    TempData["success"] = "Product updated successfully";
+                }
                 _unitOfWork.Save();
-                TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
             else
