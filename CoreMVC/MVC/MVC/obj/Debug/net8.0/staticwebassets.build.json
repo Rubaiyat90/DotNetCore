@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SluFi4Be3xsVvrN6poilecWHngyRjpMNOW0Zs5ilbYA=",
+  "Hash": "nPTQlwEaznkkNixfw8MCiTM9ovc1NYCL7TG2JFQp5xg=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -150,25 +150,6 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\36fa7e3a-c510-41c0-8fb5-06bf0f681f22.png"
     },
     {
-      "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\6cc8c0e7-21e5-4fbf-90dc-c19807c12505.png",
-      "SourceId": "MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\",
-      "BasePath": "_content/MVC",
-      "RelativePath": "images/product/6cc8c0e7-21e5-4fbf-90dc-c19807c12505.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\6cc8c0e7-21e5-4fbf-90dc-c19807c12505.png"
-    },
-    {
       "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\78d2baab-d515-47df-a866-b1794f455c2a.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -243,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\dc518933-dac1-4623-8cfc-c692016eadb3.png"
+    },
+    {
+      "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\js\\product.js",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\js\\site.js",

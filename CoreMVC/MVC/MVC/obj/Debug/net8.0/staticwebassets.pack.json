@@ -17,10 +17,6 @@
       "PackagePath": "staticwebassets\\images\\product\\36fa7e3a-c510-41c0-8fb5-06bf0f681f22.png"
     },
     {
-      "Id": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\6cc8c0e7-21e5-4fbf-90dc-c19807c12505.png",
-      "PackagePath": "staticwebassets\\images\\product\\6cc8c0e7-21e5-4fbf-90dc-c19807c12505.png"
-    },
-    {
       "Id": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\78d2baab-d515-47df-a866-b1794f455c2a.png",
       "PackagePath": "staticwebassets\\images\\product\\78d2baab-d515-47df-a866-b1794f455c2a.png"
     },
@@ -35,6 +31,10 @@
     {
       "Id": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\dc518933-dac1-4623-8cfc-c692016eadb3.png",
       "PackagePath": "staticwebassets\\images\\product\\dc518933-dac1-4623-8cfc-c692016eadb3.png"
+    },
+    {
+      "Id": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
     },
     {
       "Id": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\js\\site.js",
