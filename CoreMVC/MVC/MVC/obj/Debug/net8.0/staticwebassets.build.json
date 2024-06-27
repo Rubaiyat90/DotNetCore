@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nPTQlwEaznkkNixfw8MCiTM9ovc1NYCL7TG2JFQp5xg=",
+  "Hash": "TaYfd++49sWoao49Hoi6QtgRB+1ss5PzzCySSROZ/Fs=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\3072996f-7826-4fc7-bac8-f3fda83a7cd4.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "images/product/3072996f-7826-4fc7-bac8-f3fda83a7cd4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\3072996f-7826-4fc7-bac8-f3fda83a7cd4.png"
+    },
+    {
       "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\36fa7e3a-c510-41c0-8fb5-06bf0f681f22.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -150,12 +169,12 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\36fa7e3a-c510-41c0-8fb5-06bf0f681f22.png"
     },
     {
-      "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\78d2baab-d515-47df-a866-b1794f455c2a.png",
+      "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\6b133d42-e77d-4192-b5a7-85a1924bf83c.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\",
       "BasePath": "_content/MVC",
-      "RelativePath": "images/product/78d2baab-d515-47df-a866-b1794f455c2a.png",
+      "RelativePath": "images/product/6b133d42-e77d-4192-b5a7-85a1924bf83c.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,7 +185,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\78d2baab-d515-47df-a866-b1794f455c2a.png"
+      "OriginalItemSpec": "wwwroot\\images\\product\\6b133d42-e77d-4192-b5a7-85a1924bf83c.png"
     },
     {
       "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\821be605-09f6-4caf-97c3-b32ba787461e.png",
@@ -188,6 +207,25 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\821be605-09f6-4caf-97c3-b32ba787461e.png"
     },
     {
+      "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\d968d791-23cc-4f5e-8e7a-78a5ceff3174.png",
+      "SourceId": "MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\",
+      "BasePath": "_content/MVC",
+      "RelativePath": "images/product/d968d791-23cc-4f5e-8e7a-78a5ceff3174.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\d968d791-23cc-4f5e-8e7a-78a5ceff3174.png"
+    },
+    {
       "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\da91ba34-064c-4946-9d91-f55e2f264053.jpg",
       "SourceId": "MVC",
       "SourceType": "Discovered",
@@ -207,12 +245,12 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\da91ba34-064c-4946-9d91-f55e2f264053.jpg"
     },
     {
-      "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\dc518933-dac1-4623-8cfc-c692016eadb3.png",
+      "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\images\\product\\fee26870-2f45-456c-9e7e-80aaa5eadd23.png",
       "SourceId": "MVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\",
       "BasePath": "_content/MVC",
-      "RelativePath": "images/product/dc518933-dac1-4623-8cfc-c692016eadb3.png",
+      "RelativePath": "images/product/fee26870-2f45-456c-9e7e-80aaa5eadd23.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -223,7 +261,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\dc518933-dac1-4623-8cfc-c692016eadb3.png"
+      "OriginalItemSpec": "wwwroot\\images\\product\\fee26870-2f45-456c-9e7e-80aaa5eadd23.png"
     },
     {
       "Identity": "D:\\Practise\\CoreMVC\\MVC\\MVC\\wwwroot\\js\\product.js",
