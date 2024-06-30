@@ -3,11 +3,14 @@ using Microsoft.AspNetCore.Mvc;
 using DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Models.ViewModel;
+using Microsoft.AspNetCore.Authorization;
+using Utility;
 
 
 namespace MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class ProductController : Controller
     {
         public readonly IUnitOfWork _unitOfWork;
