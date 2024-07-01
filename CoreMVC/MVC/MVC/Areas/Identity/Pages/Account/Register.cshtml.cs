@@ -108,6 +108,14 @@ namespace MVC.Areas.Identity.Pages.Account
             public string? Role{ get; set; }
             [ValidateNever]
             public IEnumerable<SelectListItem> RoleList { get; set; }
+
+            [Required]
+            public string name { get; set; }
+            public string? streetAddress { get; set; }
+            public string? city { get; set; }
+            public string? state { get; set; }
+            public string? postalCode { get; set; }
+            public string? phoneNumber {  get; set; }
         }
 
 
@@ -143,6 +151,12 @@ namespace MVC.Areas.Identity.Pages.Account
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+                user.Name = Input.name;
+                user.StreetAddress = Input.streetAddress;
+                user.City = Input.city;
+                user.State = Input.state;
+                user.PostalCode = Input.postalCode;
+                user.PhoneNumber = Input.phoneNumber;
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
